@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "875589144266",
+    "project_id": "interesta"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875589144266:android:b2422d7b3f1bb0dc",
+        "android_client_info": {
+          "package_name": "com.example.bharathwaj.interesta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875589144266-vhkal0n14nj9sphv8dp1ots4783t1jt8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bharathwaj.interesta",
+            "certificate_hash": "87aed2f63748a27c4c77d0c34c9f40af8708495c"
+          }
+        },
+        {
+          "client_id": "875589144266-bulpok76kad3ipivq0mrf47dn9p03qh3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT9oMmHL-DcpzQV5_bH-yr_xNPjJyg3j4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
