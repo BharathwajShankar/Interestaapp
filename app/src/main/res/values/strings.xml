@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Interesta</string>
+    <string name="login_successful">Login successful</string>
+    <string name="name">Name</string>
+    <string name="interests">Interests</string>
+    <string name="interesta">INTERESTA</string>
+    <string name="your_interest_our_hope">YOUR INTEREST OUR HOPE</string>
+    <string name="submit">Submit</string>
 </resources>
