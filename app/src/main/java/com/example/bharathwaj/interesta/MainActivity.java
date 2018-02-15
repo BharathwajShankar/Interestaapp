@@ -1,5 +1,4 @@
 package com.example.bharathwaj.interesta;
-
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +15,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     GoogleSignInClient mGoogleSignInClient;
    private static final int RC_SIGN_IN = 0;
     private static final String TAG = "GPlusFragment";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
@@ -71,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             // Signed in successfully, show authenticated UI.
             updateUI(account);
-            Intent intent =new Intent( MainActivity.this,welcome.class );
+            Intent intent =new Intent(MainActivity.this,CheckboxSharedPreferences.class);
             startActivity(intent);
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.

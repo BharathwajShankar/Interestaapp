@@ -5,5 +5,17 @@
     <string name="interests">Interests</string>
     <string name="interesta">INTERESTA</string>
     <string name="your_interest_our_hope">YOUR INTEREST OUR HOPE</string>
-    <string name="submit">Submit</string>
+    <string name="save">save</string>
+    <string name="display">Display</string>
+    <string name="clearall">clearall</string>
+    <string name="get_choice">Get Choice</string>
+    <string name="clear_all">Clear All</string>
+    <string name="submit">submit</string>
+    <string name="hello_user">Hello_User!!!</string>
+    <string name="AddImage">AddImage</string>
+    <string name="todo">todo</string>
+    <string name="enter_the_Interest_name">Enter_the_interest_name</string>
+    <string name="addimage">addImage</string>
+    <string name="welcome_user">Welcome User!!</string>
+    <string name="add_contents">Add_contents</string>
 </resources>
