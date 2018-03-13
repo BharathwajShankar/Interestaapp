@@ -8,17 +8,17 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
-
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 
-public class AddContents extends Activity {
+public class AddContents extends AppCompatActivity{
 
 private EditText fname;
 private ImageView pic;
@@ -35,7 +35,7 @@ private byte[] photo;
 protected void onCreate(Bundle savedInstanceState) {
 super.onCreate(savedInstanceState);
 setContentView(R.layout.activity_addcontent );
-
+getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 //Instantiate database handler
 db=new DatabaseHandler(this);
 
@@ -147,11 +147,9 @@ private void getValues(){
 f_name = fname.getText().toString();
 photo = profileImage(bp);
 }
-
 //Insert data to the database
 private void addContact(){
 getValues();
-
 db.addContacts(new contactsList(f_name, photo));
 Toast.makeText(getApplicationContext(),"Saved successfully", Toast.LENGTH_LONG).show();
 }

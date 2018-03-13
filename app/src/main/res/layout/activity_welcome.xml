@@ -1,88 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bharathwaj.interesta.CheckboxSharedPreferences"
-    tools:layout_editor_absoluteY="81dp">
-    <RelativeLayout
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
-        <TextView
-            android:id="@+id/tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:text="@string/login_successful"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_red_dark"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            android:visibility="visible" />
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/tv"
-            android:layout_marginTop="16dp"
-            android:fontFamily="cursive"
-            android:text="@string/name"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:typeface="sans" />
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView2"
-            android:ems="10"
-            android:hint="@string/name"
-            android:inputType="textPersonName"
-            android:labelFor="@id/editText" />
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/editText"
-            android:fontFamily="casual"
-            android:text="@string/interests"
-            android:textColor="@android:color/holo_blue_bright"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:typeface="normal" />
+    android:background="@drawable/infobg"
+    tools:context=".MainActivity">
 
-        <ListView
-            android:id="@+id/list"
-            style="@style/Widget.AppCompat.ListView.Menu"
-            android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dip"
+        android:id="@+id/linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Text Label -->
+        <TextView
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView3"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:scrollbars="vertical"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="0dp" />
-        <Button
-            android:id="@+id/getchoice"
-            android:layout_below="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/get_choice" />
-        <Button
-            android:id="@+id/clearall"
-            android:layout_below="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/getchoice"
-            android:text="@string/clearall" />
-    </RelativeLayout>
-</android.support.constraint.ConstraintLayout>
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip"
+            android:fontFamily="sans-serif"
+            android:text="Interests:"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <!-- Spinner Element -->
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="53dp"
+            android:background="@android:color/transparent"
+            android:prompt="@string/spinner_title" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="135dp"
+        android:layout_marginStart="90dp"
+        android:text="NEXT" />
+
+
+</RelativeLayout>

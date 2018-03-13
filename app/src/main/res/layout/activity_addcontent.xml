@@ -18,19 +18,19 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/addimage" />
-
         <ImageView
             android:id="@+id/pic"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:contentDescription="@string/todo"
             android:onClick="buttonClicked"
             android:src="@drawable/ic_launcher_background"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="205dp"
             tools:layout_editor_absoluteY="16dp" />
-    <EditText
+
+
+        <EditText
             android:id="@+id/txt1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,7 +39,6 @@
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="137dp" />
-
         <Button
             android:id="@+id/save"
             android:layout_width="wrap_content"
@@ -61,6 +60,7 @@
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="117dp"
             tools:layout_editor_absoluteY="76dp" />
+
         <ListView
             android:id="@+id/list1"
             android:layout_width="match_parent"
@@ -70,5 +70,5 @@
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="239dp" />
-    </LinearLayout>
+</LinearLayout>
 </android.support.constraint.ConstraintLayout>
