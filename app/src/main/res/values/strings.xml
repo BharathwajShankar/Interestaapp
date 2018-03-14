@@ -21,4 +21,6 @@
     <string name="b4">Button</string>
     <string name="resources">Resources:</string>
     <string name="next">NEXT</string>
+    <string name="add_contents_here">add contents here</string>
+    <string name="welcome" />
 </resources>

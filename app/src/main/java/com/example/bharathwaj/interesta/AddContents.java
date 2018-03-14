@@ -46,29 +46,29 @@ fname=findViewById(R.id.txt1);
 
 }
 
-public void buttonClicked(View v){
-int id=v.getId();
+public void buttonClicked(View v) {
+    int id = v.getId();
 
-switch(id){
+    switch (id) {
 
-    case R.id.save:
+        case R.id.save:
 
-        if(fname.getText().toString().trim().equals("")){
-            Toast.makeText(getApplicationContext(),"Name edit text is empty, Enter name", Toast.LENGTH_LONG).show();
-        }  else{
-            addContact();
-        }
+            if (fname.getText().toString().trim().equals( "" )) {
+                Toast.makeText( getApplicationContext(), "Name edit text is empty, Enter name", Toast.LENGTH_LONG ).show();
+            } else {
+                addContact();
+            }
 
-        break;
+            break;
 
-    case R.id.display:
+        case R.id.display:
+            ShowRecords();
+            break;
+        case R.id.pic:
+            selectImage();
+            break;
 
-        ShowRecords();
-        break;
-    case R.id.pic:
-        selectImage();
-        break;
-}
+    }
 }
 
 public void selectImage(){

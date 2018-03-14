@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -23,7 +24,7 @@ public class Content extends Activity implements AdapterView.OnItemSelectedListe
         // Spinner element
         final Spinner spinner = (Spinner) findViewById( R.id.spinner1 );
         Button button = (Button) findViewById( R.id.button1 );
-
+        ImageButton img = findViewById( R.id.imageButton );
         // Spinner click listener
         spinner.setOnItemSelectedListener( this );
 
@@ -129,6 +130,13 @@ public class Content extends Activity implements AdapterView.OnItemSelectedListe
                 }
             }
         } );
+img.setOnClickListener( new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent i = new Intent( Content.this,AddContents.class );
+        startActivity( i );
+    }
+} );
     }
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {

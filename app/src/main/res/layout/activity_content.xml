@@ -7,19 +7,19 @@
     android:background="@drawable/coverer"
     tools:context="com.example.bharathwaj.interesta.Content">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="51dp"
-        tools:ignore="MissingConstraints">
+        android:layout_height="511dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
+            android:id="@+id/textView2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dip"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:text="@string/resources" />
 
         <!-- Spinner Element -->
@@ -27,6 +27,9 @@
             android:id="@+id/spinner1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
             android:popupBackground="@android:color/holo_blue_light"
             android:prompt="@string/spinner_title" />
@@ -36,8 +39,11 @@
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner1"
             android:layout_gravity="center"
-            android:background="@android:color/holo_blue_light"
+            android:layout_marginTop="33dp"
+            android:layout_toStartOf="@+id/imageButton"
+            android:background="@android:color/transparent"
             android:fontFamily="cursive"
             android:text="@string/next"
             android:textAlignment="center"
@@ -47,12 +53,51 @@
             android:typeface="sans"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="51dp" />
+            tools:layout_editor_absoluteY="72dp" />
 
-        <ImageView
-            android:id="@+id/imageView"
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="143dp"
+            android:layout_height="136dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/add_contents"
+            android:src="@drawable/addcon"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="241dp"
+            tools:layout_editor_absoluteY="374dp" />
+
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/welcome" />
-    </LinearLayout>
+            android:layout_above="@+id/imageButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="13dp"
+            android:fontFamily="serif"
+            android:text="@string/add_contents_here"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="203dp"
+            tools:layout_editor_absoluteY="349dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="298dp"
+            android:layout_height="184dp"
+            android:layout_above="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/welcome"
+            android:src="@drawable/welcome"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="130dp" />
+
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
