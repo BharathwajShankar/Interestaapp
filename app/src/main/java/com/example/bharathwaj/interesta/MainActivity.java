@@ -1,7 +1,8 @@
 package com.example.bharathwaj.interesta;
-import android.content.Intent;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -11,15 +12,17 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
 
+
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     GoogleSignInClient mGoogleSignInClient;
-   private static final int RC_SIGN_IN = 0;
+    private static final int RC_SIGN_IN = 0;
     private static final String TAG = "GPlusFragment";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_main );
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         findViewById(R.id.sign_in_button).setOnClickListener(this);
 
         // Configure sign-in to request the user's ID, email address, and basic

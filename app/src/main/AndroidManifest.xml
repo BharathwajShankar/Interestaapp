@@ -14,6 +14,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -22,23 +23,22 @@
         <activity android:name=".DisplayActivity" />
         <activity android:name=".AddContents" />
         <activity android:name=".Cricket" />
-        <activity android:name=".Content">
-        </activity>
-        <activity android:name=".Football">
-        </activity>
-        <activity android:name=".Horoscope"/>
-        <activity android:name=".Music"/>
-        <activity android:name=".Petcare"/>
-        <activity android:name=".Photography"/>
-        <activity android:name=".Reading"/>
-        <activity android:name=".Tourism"/>
-        <activity android:name=".Unnamedmysteries"/>
-        <activity android:name=".Beauty"/>
-        <activity android:name=".Bodybuilding"/>
-        <activity android:name=".Dance"/>
-        <activity android:name=".Doodling"/>
-        <activity android:name=".Driving"/>
-        <activity android:name=".Food"/>
-        <activity android:name=".Gaming"/>
+        <activity android:name=".Content"></activity>
+        <activity android:name=".Football"></activity>
+        <activity android:name=".Horoscope" />
+        <activity android:name=".Music" />
+        <activity android:name=".Petcare" />
+        <activity android:name=".Photography" />
+        <activity android:name=".Reading" />
+        <activity android:name=".Tourism" />
+        <activity android:name=".Unnamedmysteries" />
+        <activity android:name=".Beauty" />
+        <activity android:name=".Bodybuilding" />
+        <activity android:name=".Dance" />
+        <activity android:name=".Doodling" />
+        <activity android:name=".Driving" />
+        <activity android:name=".Food" />
+        <activity android:name=".Gaming" />
     </application>
+
 </manifest>
